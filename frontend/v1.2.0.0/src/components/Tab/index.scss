@@ -1,0 +1,76 @@
+/**
+ * Author：tantingting
+ * Time：2017/8/17
+ * Description：Description CarouselIndex
+ */
+@import "../../../libs/scss/rem";
+
+.tab-main {
+    background: #e1e6ea;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    padding: rem(10) rem(15);
+    ul{
+        height: 100%;
+        background: #e1e6ea;
+        /*border-bottom: 1px solid #ccd5dd;*/
+        width: auto;
+        white-space: nowrap;
+        display: flex;
+       /* border-bottom: 1px solid #ccd5dd;*/
+       /* flex-wrap: nowrap;*/
+        &>li{
+            font-size: rem(20);
+            float: left;
+            /*padding: rem(10) rem(15);*/
+            &.active{
+                /*width: rem(154);*/
+                position: relative;
+                a{
+                    background-color: #ffffff;
+                    border: 1px solid #d3dbe2;
+                    border-radius:rem(30);
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    border: rem(12) solid transparent;
+                    /* border: 10px solid transparent;*/
+                    border-bottom-color: #fff;
+                    bottom: rem(-13);
+                    /* bottom: -3px;*/
+                    left: rem(67);
+                    z-index: 3;
+                }
+            }
+           /* background: #e1e6ea;
+            border-bottom: 1px solid #ccd5dd;*/
+           a{
+               display: block;
+               color:#252e38;
+               padding: rem(15) rem(29);
+               position: relative;
+               text-align: center;
+               width: rem(117);
+              /* box-sizing: border-box;
+               height: rem(60);*/
+               text-overflow: ellipsis;
+               overflow: hidden;
+           }
+        }
+
+    }
+}
+.order-main .tab-main{
+    padding: rem(12) rem(15);
+    ul > li a{
+        width: rem(130);
+    }
+}
+/*.tap-cont{
+    overflow-y: auto;
+}*/

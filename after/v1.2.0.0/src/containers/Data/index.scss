@@ -1,0 +1,212 @@
+/**
+ * Author：tantingting
+ * Time：2017/11/10
+ * Description：Description
+ */
+
+.data-wrap {
+    color: #333333;
+
+    .data-title {
+        margin-bottom: 15px;
+    }
+
+    .items-block {
+        background-color: #f7f7f7;
+        padding: 10px 0px 10px 10px;
+        display: inline-block;
+
+        .item {
+            background-color: #ffffff;
+            width: 130px;
+            height: 170px;
+            float: left;
+            margin-right: 10px;
+            text-align: center;
+            border-radius: 5px;
+
+            .item-icon {
+                /* background-color: #4eabd6; */
+                padding: 10px;
+                border-radius: 50%;
+                width: 55px;
+                height: 55px;
+                margin: 20px auto;
+            }
+
+            img {
+                width: 55px;
+                height: 55px;
+                margin: 20px 0;
+            }
+
+            .num {
+                color: #ed5b5b;
+                margin-top: 10px;
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .charts-box {
+        background-color: #f7f7f7;
+        padding: 10px;
+        margin-bottom: 30px;
+
+        & > div{
+            background-color: #ffffff;
+            border: 1px solid #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .charts-top {
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+
+            a{
+                color: #333333;
+                margin-left: 15px;
+                text-decoration: none !important;
+
+                &:hover {
+                    color: #31b4e1
+                }
+
+                &.active {
+                    color: #31b4e1
+                }
+            }
+        }
+
+        .data-charts {
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    .icon-data {
+        display: inline-block;
+        background: url("./img/data-icon4.png") no-repeat 1px 0px;
+        background-size: contain;
+        margin-right: 5px;
+        width: 16px;
+        height: 13px;
+        vertical-align: text-bottom;
+    }
+
+    .icon-sale {
+        display: inline-block;
+        background: url("./img/data-icon3.png") no-repeat 1px 1px;
+        background-size: contain;
+        margin-right: 5px;
+        width: 18px;
+        height: 15px;
+        vertical-align: text-bottom;
+    }
+
+    .icon-order {
+        display: inline-block;
+        background: url("./img/data-icon1.png") no-repeat 1px 1px;
+        background-size: contain;
+        margin-right: 5px;
+        width: 18px;
+        height: 15px;
+        vertical-align: text-bottom;
+    }
+
+    .icon-user {
+        display: inline-block;
+        background: url("./img/data-icon2.png") no-repeat 1px 1px;
+        background-size: contain;
+        margin-right: 5px;
+        width: 18px;
+        height: 15px;
+        vertical-align: text-bottom;
+    }
+
+    .data-icon-visit {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon5.png") no-repeat 0px 0px;
+        background-size: contain;
+        margin-top: 5px;
+    }
+
+    .data-icon-sale {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon6.png") no-repeat 0px 0px;
+        background-size: contain;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+    .data-icon-order {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon7.png") no-repeat 0px 0px;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+
+    .data-icon-payed {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon8.png") no-repeat 0px 0px;
+        background-size: contain;
+    }
+
+    .data-icon-nopay {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon9.png") no-repeat 0px 0px;
+        background-size: contain;
+        margin-top: 5px;
+    }
+
+    .data-icon-user {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon10.png") no-repeat 0px 0px;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 3px;
+    }
+
+    .data-icon-money {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: url("./img/data-icon11.png") no-repeat 0px 0px;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 3px;
+    }
+
+    .bg_greenblue{
+        background-color: #6abab9;
+    }
+
+    .bg_pink{
+        background-color: #de76a4;
+    }
+
+    .bg_blue{
+        background-color: #4eabd6;
+    }
+
+    .bg_yellow{
+        background-color: #e6c168;
+    }
+}

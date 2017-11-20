@@ -1,0 +1,272 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/16
+ * Description：index
+ */
+@import "../../../libs/scss/rem";
+
+.index-main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    header{
+         background-color: #14191d;
+        font-size: rem(20);
+        height: rem(55);
+        padding: 0px rem(25);
+        color:#ffffff;
+        display: flex;
+        justify-content: space-between;
+        &>div{
+            display: flex;
+            align-items: center;
+            &>i{
+                background: url("./img/icon-user.png") no-repeat;
+                width: rem(25);
+                height: rem(25);
+                display: block;
+                background-size: cover;
+            }
+            &>span{
+                margin-left: rem(8);
+            }
+            &>div.user-round{
+                width: rem(35);
+                height: rem(35);
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+    .index-carouser{
+        height: rem(172);
+    }
+  .index-content{
+    background: #ffffff;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+  }
+    .index-tab{
+        height: rem(85);
+    }
+    .index-tab-cont{
+        flex: 1;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        background: #e1e6ea;
+        /*position: relative;*/
+        &>div>div{
+            padding: rem(25);
+            background: #ffffff;
+            margin-bottom: rem(15);
+        }
+        .title{
+            color:#a7b0b5;
+            font-size: rem(20);
+            margin-bottom: rem(25);
+            .icon-lan{
+                width: rem(20);
+                height: rem(20);
+                background: url("./img/icon-lan.png");
+                background-size: contain;
+                display: inline-block;
+                margin-right: rem(10);
+            }
+        }
+        .item{
+             display: flex;
+             justify-content: space-between;
+             align-items: flex-end;
+             margin-bottom: rem(42);
+             position: relative;
+             z-index: 1;
+             &>div.item-goods{
+                 display: flex;
+                 .goods-block{
+                     width: rem(155);
+                     height: rem(155);
+                     border-radius: rem(15);
+                     /* background: url("./img/list-1.png") no-repeat;
+                      background-size: contain;*/
+                     margin-right: rem(20);
+                     overflow: hidden;
+                     position: relative;
+                     img{
+                         width: 100%;
+                     }
+                     .role{
+                         position: absolute;
+                         top: 0px;
+                         left: 0px;
+                         width: rem(75);
+                         height: rem(75);
+                         &.ios{
+                             background: url("./img/ios.png") no-repeat;
+                             background-size: contain;
+                         }
+                         &.android{
+                             background: url("./img/anzhuo.png") no-repeat;
+                             background-size: contain;
+                         }
+                     }
+                 }
+                 .goods-info{
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-between;
+                     // max-width: rem(255);
+                     // overflow: hidden;
+                     &>h4{
+                         font-size: rem(27.3);
+                         color:#252e38;
+                         max-width: rem(320);
+                         overflow: hidden;
+                         text-overflow: ellipsis;
+                         white-space: nowrap;
+                     }
+                     &>div{
+                         .icon-yuan{
+                             font-size: rem(32);
+                             color:#a2c2d9;
+                             margin-right: rem(5);
+                         }
+                         .oprice{
+                             text-decoration: line-through;
+                             margin-left: rem(5);
+                             color: #a7b0b5;
+                             font-size: rem(25);
+                         }
+                         font-size: rem(27.3);
+                         color:#ff7815;
+                         &>div{
+                             width: rem(260);
+                             overflow: hidden;
+                             // text-overflow: ellipsis;
+                         }
+                         &>span{
+                             margin-top: rem(10);
+                             color:#9fa0a6;
+                             font-size: rem(20.47);
+                             display: block;
+                             width: rem(260);
+                             overflow: hidden;
+                             text-overflow: ellipsis;
+                             white-space: nowrap;
+                         }
+                     }
+                 }
+             }
+             .btn-yellow{
+                 text-align: center;
+                 width: rem(155);
+                 height: rem(65);
+                 background-color:#fec64b;
+                 color:#ffffff;
+                 border-radius: rem(35);
+                 line-height:rem(65);
+                 position: absolute;
+                 right: 0;
+                 z-index: 3;
+             }
+         }
+        /*没有数据*/
+        .no-data{
+            background-color: #ffffff;
+            font-size: rem(25.59);
+            color:#252e38;
+            height: rem(530);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                width: rem(75);
+                height: rem(75);
+                margin-bottom: rem(25);
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+    /*用户中心*/
+    .index-user{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background: rgba(209, 210, 210, 0.5);
+        overflow: auto;
+        /*position: absolute;
+        height: 100%;
+        width: 100%;
+        .mask{
+            position:fixed;
+            background: rgba(209, 210, 210,0.6);
+            width: 100%;
+            top: 0px;
+            left:0px;
+            height: 100%;
+            z-index: 1000;
+        }*/
+
+        /*opacity: 0.6;*/
+        &>div.user-main{
+            width: rem(425);
+            background: rgba(0, 0, 0,0.8);;
+            /*opacity: 0.3;*/
+            color:#ffffff;
+            position: fixed;
+            z-index: 1001;
+            top:0px;
+            right: 0px;
+            height: 100%;
+            &>div{
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #414448;
+                box-sizing: border-box;
+                &.user-info{
+                    justify-content:flex-end;
+                    align-items: center;
+                    height: rem(328);
+                    padding-bottom: rem(50);
+                    h4{
+                        font-size:rem(27.3);
+                    }
+                    .img-block{
+                        width: rem(140);
+                        height: rem(140);
+                        border-radius: 50%;
+                        background: #ffffff url("./img/ic_launcher.png");
+                        background-size: contain;
+                        margin-bottom: rem(20);
+                    }
+                }
+                &:nth-of-type(2){
+                    height: rem(228);
+                    padding-left: rem(65);
+                    justify-content: space-around;
+                    i{
+                        margin-right: rem(25);
+                        font-size: rem(30);
+                    }
+                    a{
+                        color:#d7dee4;
+                        font-size: rem(23.89);
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}

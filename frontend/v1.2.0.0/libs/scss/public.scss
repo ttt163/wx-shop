@@ -1,0 +1,46 @@
+/*style reset*/
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl, dt, dd, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        @extend a;
+    }
+}
+
+em, i {
+    font-style: normal;
+}
+
+/*clearfix*/
+.clearfix:before, .clearfix:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
