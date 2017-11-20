@@ -87,12 +87,10 @@ module.exports = {
         hot: true,
         historyApiFallback: true,
         contentBase: ROOT_PATH,
-        host: '192.168.84.25',
-        // host: '127.0.0.1',
+        host: '127.0.0.1',
         port: '3008',
         proxy: [{
             context: ['/*'],
-            /* target: 'http://test.lk.8864.com', */
             target: 'http://dev-wechatstore.linekong.com/',
             changeOrigin: true,
             ws: true,
