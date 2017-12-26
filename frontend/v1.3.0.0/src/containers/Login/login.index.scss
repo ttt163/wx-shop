@@ -1,0 +1,102 @@
+/**
+ * Author：tantingting
+ * Time：2017/8/17
+ * Description：Description CarouselIndex
+ */
+@import "../../../libs/scss/rem";
+
+.login-main {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    /*position:fixed; top:0; right:0; bottom:0; left:0; background:rgba(0,0,0,0.5);
+    z-index: 999;
+    overflow: auto;*/
+    /*.login-mask{
+        height: 100%;
+        !* background: #ffffff;*!
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        // display: flex;
+        // justify-content: center;
+    }*/
+    .login-content {
+        background: #ffffff;
+        position: absolute;
+        z-index: 1000;
+        padding: rem(40);
+        border-radius: rem(7);
+        // top:rem(200);
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        // left: rem(100);
+        /* position:absolute;
+         top:40%;
+         left: rem(100);
+         transform: translate(0,-50%);
+         // max-height:80%;
+         overflow-y:auto;
+         background:#fff;
+         border-radius: rem(7);
+         padding: rem(40);*/
+        /* margin-top: rem(100);*/
+        /* display: flex;
+         flex-direction: column;
+         align-items: center;*/
+        .logo {
+            margin-bottom: rem(15);
+            width: rem(180);
+            margin-right: auto;
+            margin-left: auto;
+            img {
+                width: 100%;
+            }
+        }
+        .login-btn {
+            background: #f6a201;
+            color: #ffffff;
+            height: rem(40);
+            width: rem(400);
+            display: block;
+            margin-top: rem(15);
+            border-radius: rem(8);
+            text-align: center;
+            line-height: rem(40);
+            padding: rem(6) rem(0);
+        }
+        .input-group {
+            /* height: rem(34);*/
+            border: 1px solid #d2d2d2;
+            border-radius: rem(5);
+            box-sizing: border-box;
+            margin-bottom: rem(25);
+            padding: 0 rem(7);
+            width: rem(400);
+            overflow: hidden;
+
+            i {
+                margin-right: rem(10);
+                font-size: rem(30);
+                color: #d2d2d2;
+            }
+            input {
+                border: 0px;
+                outline: 0px;
+                height: rem(52);
+                line-height: rem(48);
+                width: rem(340);
+            }
+        }
+    }
+    input:-webkit-autofill {
+        background-color: #ffffff;
+    }
+}

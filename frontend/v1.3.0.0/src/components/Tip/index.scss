@@ -1,0 +1,19 @@
+/**
+ * Author：tantingting
+ * Time：2017/12/1
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+.tip-modal {
+    position: fixed;
+    z-index: 99;
+    bottom: rem(100);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: rem(18) rem(20);
+    border-radius: rem(10);
+    font-size: rem(20);
+}

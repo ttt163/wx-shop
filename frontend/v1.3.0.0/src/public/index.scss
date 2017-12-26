@@ -1,0 +1,131 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/7/27
+ * Description：public
+ */
+@import "../../libs/scss/normalize";
+@import "../../libs/scss/public";
+@import "../../libs/scss/rem";
+html, body, #root {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/*webkit滚动条样式*/
+* {
+    &::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+    &::-webkit-scrollbar-button {
+        background-color: #f0f0f0;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f0f0f0;
+    }
+    &::-webkit-scrollbar-track-piece {
+        background: #f0f0f0;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-corner {
+        background: #f0f0f0;
+    }
+}
+body{
+    /*background: #e1e6ea;*/
+    background: #fff;
+    /*overflow: hidden;*/
+    .home-bth{
+        position: fixed;
+        z-index: 88;
+        bottom: rem(60);
+        right: rem(30);
+        width: rem(95);
+        height: rem(95);
+        background: url("./img/icon-home.png") no-repeat;
+        background-size: contain;
+    }
+
+    .h100 {
+        height: 100%;
+    }
+
+    .hot-img {
+        background: url("./img/hot.png") no-repeat;
+        height: 55%;
+        width: 55%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+    }
+
+    .hot-img-large {
+        background: url("./img/hot.png") no-repeat;
+        height: 45%;
+        width: 45%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+    }
+
+    .goods-block {
+        border: 1px solid #f0f0f0;
+        z-index: 2;
+        font-size: 0;
+        /*box-sizing: border-box;*/
+    }
+
+    .goods-root {
+        color: #e4e4e4;
+        background-color: rgba(0,0,0,0.6);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 6% 0;
+        font-size: rem(16);
+    }
+    .btn-yellow {
+        text-align: center;
+        padding: rem(10) rem(24);
+        background-color: #ff9a14;
+        color: #ffffff;
+        border-radius: rem(30);
+        font-size: rem(23.89);
+    }
+    /*没有数据*/
+    .no-data{
+        background-color: #ffffff;
+        font-size: rem(20.47);
+        color:#88898a;
+        height: rem(530);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            margin-top: rem(10);
+        }
+
+        i {
+            font-size: rem(124);
+        }
+    }
+}
+/*去掉a默认样式*/
+a{
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input::-webkit-input-placeholder{
+    color:#d2d2d2;
+    font-size: rem(18);
+}

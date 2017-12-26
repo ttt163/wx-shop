@@ -1,0 +1,66 @@
+/**
+ * Author：tantingting
+ * Time：2017/12/1
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+.img-modal {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    .mask {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        top: 0;
+        left: 0;
+    }
+
+    .content {
+        position: fixed;
+        width: rem(560);
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &>div {
+            position: relative;
+        }
+        .close {
+            background: url("./img/img-close.png") no-repeat;
+            width: rem(41);
+            height: rem(52);
+            background-size: contain;
+            position: absolute;
+            right: rem(20);
+            top: rem(-51);
+            /* color: #fff;
+            .icon-close {
+                position: absolute;
+                top: rem(-63);
+                right: rem(20);
+                z-index: 9;
+                font-size: rem(50);
+            }
+
+            .line {
+                height: rem(15);
+                background-color: #fff;
+                width: 1px;
+                position: absolute;
+                right: rem(45);
+                top: rem(-10);
+            } */
+        }
+        .img-box {
+            height: rem(700);
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

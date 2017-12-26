@@ -1,0 +1,36 @@
+{
+    "extends": "standard",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    },
+    "globals": {
+        "CONFIG": true,
+        "$": true
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "worker": true,
+        "mocha": true,
+        "phantomjs": true,
+        "serviceworker": true
+    }
+}

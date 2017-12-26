@@ -1,0 +1,4 @@
+/*mobile width 640px rem caculate*/
+@function rem($pixelValue) {
+    @return ($pixelValue / 24) + rem;
+}

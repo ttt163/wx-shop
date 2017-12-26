@@ -1,0 +1,103 @@
+/**
+ * Author：tantingting
+ * Time：2017/8/17
+ * Description：Description CarouselIndex
+ */
+@import "../../../libs/scss/rem";
+
+.tab-main {
+    background: #fff;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    padding: rem(10) rem(15);
+    border-bottom: 1px solid #e5e5e5;
+    ul {
+        background: #fff;
+        white-space: nowrap;
+        display: flex;
+        li {
+            padding: rem(15) rem(25);
+            position: relative;
+
+            &.active {
+                a{
+                    color: #29a1f7;
+                    font-size: rem(24);
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: rem(75);
+                    height: rem(2);
+                    background-color: #29a1f7;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: rem(-10);
+                }
+            }
+
+            a {
+                color:#aaa;
+                font-size: rem(22);
+            }
+        }
+    }
+    /*ul{
+        height: 100%;
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        width: auto;
+        white-space: nowrap;
+        display: flex;
+       !* border-bottom: 1px solid #ccd5dd;*!
+       !* flex-wrap: nowrap;*!
+        &>li{
+            font-size: rem(20);
+            float: left;
+            !*padding: rem(10) rem(15);*!
+            &.active{
+                !*width: rem(154);*!
+                position: relative;
+                a{
+                    color: #29a1f7;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    !* border: rem(12) solid transparent; *!
+                    !* border: 10px solid transparent;*!
+                    !* border-bottom-color: #fff; *!
+                    bottom: rem(-13);
+                    !* bottom: -3px;*!
+                    left: rem(67);
+                    z-index: 3;
+                }
+            }
+           a{
+               display: block;
+               color:#aaa;
+               padding: rem(15) rem(29);
+               position: relative;
+               text-align: center;
+               width: rem(117);
+               text-overflow: ellipsis;
+               overflow: hidden;
+           }
+        }
+
+    }*/
+}
+.order-main .tab-main{
+    li {
+        margin-right: rem(60);
+    }
+}
+/*.tap-cont{
+    overflow-y: auto;
+}*/
