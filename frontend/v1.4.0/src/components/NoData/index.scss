@@ -1,0 +1,26 @@
+/**
+ * Author：tantingting
+ * Time：2017/12/1
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+/*没有数据*/
+.no-data{
+    background-color: #ffffff;
+    font-size: rem(20.47);
+    color:#88898a;
+    height: rem(530);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        margin-top: rem(10);
+    }
+
+    i {
+        font-size: rem(124);
+    }
+}

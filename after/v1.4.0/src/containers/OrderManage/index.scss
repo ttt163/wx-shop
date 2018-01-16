@@ -1,0 +1,45 @@
+/**
+ * Author：tantingting
+ * Time：2017/8/22
+ * Description：Description
+ */
+.order{
+  .user-info{
+    display: flex;
+   /* justify-content: center;*/
+    align-items: center;
+    .img-box{
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .block{
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #e9e9e9;
+    .title{
+      background: #f2f2f2;
+      height: 40px;
+      padding: 10px;
+      border-bottom: 1px solid #e9e9e9;
+      padding-left: 30px;
+    }
+    .box{
+      padding: 20px 15px;
+    }
+  }
+  .bbdot{
+    border-bottom: 1px dotted #cccccc;
+  }
+  .order-info{
+    display: flex;
+    justify-content: flex-end;
+    div{
+      margin-right: 20px;
+    }
+  }
+  img{
+    width:100%;
+  }
+
+}

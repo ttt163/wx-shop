@@ -1,0 +1,295 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/16
+ * Description：index
+ */
+@import "../../../libs/scss/rem";
+//#root{
+//  &>div {
+//    height: 100%;
+//  }
+//}
+body {
+  background: #f4f4f4;
+}
+.detail-main{
+  background: #f4f4f4;
+  font-size: rem(22);
+  color:#333;
+  padding-bottom: rem(98);
+  //height: 100%;
+  &>div{
+    padding: 0px rem(25);
+    border-bottom: 1px solid #ececec;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    &.goods-box{
+      background-color: #fff;
+      position: relative;
+      padding:rem(25);
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 0;
+      .goods-block{
+        width: rem(112);
+        height: rem(112);
+        border-radius: rem(15);
+        /* background: url("./img/list-1.png") no-repeat;
+         background-size: contain;*/
+        margin-right: rem(10);
+        overflow: hidden;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .role{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: rem(44);
+          height: rem(44);
+          &.ios{
+            background: url("./img/ios.png") no-repeat;
+            background-size: contain;
+          }
+          &.android{
+            background: url("./img/anzhuo.png") no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      .goods-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: rem(10) 0;
+        &>h4{
+          font-size: rem(26);
+          color:#252e38;
+        }
+        &>div{
+          .icon-yuan{
+            font-size: rem(22.18);
+          }
+          font-size: rem(32.42);
+          color:#ff9a14;
+          &>span{
+            text-decoration:line-through;
+            margin-left: rem(10);
+            color:#a7b0b5;
+            font-size: rem(20.47);
+          }
+        }
+      }
+      .btn-yellow {
+        position: absolute;
+        top: rem(65);
+        right:rem(30)
+      }
+    }
+    /*礼包详情*/
+    &.goods-detail{
+      display: flex;
+      flex-direction: column;
+      background: #f4f4f4;
+      color:#acacac;
+      font-size: rem(20);
+      padding: rem(40) rem(25);
+      p{
+        margin-bottom:rem(10);
+      }
+      div{
+        margin-top: rem(15);
+      }
+    }
+    /*选择平台*/
+    &.h69{
+      height: rem(69);
+      align-items: center;
+    }
+    &.platform{
+      .icon-ios {
+        font-size: 20px;
+        color: #ccc;
+      }
+      &>.btns{
+        display: flex;
+        &>a{
+          color:#ffffff;
+          width: rem(170);
+          height: rem(55);
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i{
+            font-size: rem(25);
+            margin-right: rem(10);
+          }
+          &.active{
+            position: relative;
+            .gou-bg{
+              width:rem(32);
+              height: rem(32);
+              background: url("./img/select.png") no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: rem(0);
+              right: rem(0);
+            }
+          }
+
+          border-radius: rem(6);
+          &.android{
+            background: #30bf6d;
+            margin-right: rem(6);
+          }
+          &.ios{
+            background: #008efe;
+          }
+        }
+      }
+    }
+    /*购买数量*/
+    &.edit-count{
+      &>div{
+        display: flex;
+        font-size: rem(20.47);
+        align-items: center;
+        &>span{
+          color:#f19f3d;
+          font-size: rem(18);
+          margin-right: rem(15);
+        }
+        &>div{
+          //border: 1px solid #c1c7cb;
+          //width: rem(172);
+          height: rem(55);
+          display: flex;
+          align-items: center;
+          border-radius: rem(5);
+          box-sizing: border-box;
+          overflow: hidden;
+
+          //.disabled {
+          //  background-color: #ebebe4;
+          //}
+
+          //input{
+          //  width: rem(58);
+          //  box-sizing: border-box;
+          //  border: 0px;
+          //  border-right: 1px solid #c1c7cb;
+          //  border-left: 1px solid #c1c7cb;
+          //  height: 100%;
+          //  text-align: center;
+          //}
+          span {
+            margin: 0 rem(15);
+            color: #666;
+            width: rem(40);
+            text-align: center;
+            //font-size: rem(20);
+          }
+          a{
+            //flex: 1;
+            text-align: center;
+            color:#29a1f7;
+            display: block;
+            //line-height: rem(55);
+            i{
+              font-size: rem(45);
+            }
+            .icon-add2 {
+              font-size: rem(47);
+            }
+          }
+        }
+      }
+    }
+    &>input{
+      //width: rem(320);
+      height: rem(55);
+      box-sizing: border-box;
+      border: 0;
+      line-height: normal;
+      border-radius: rem(5);
+      text-align: right;
+      &::-webkit-input-placeholder{
+        color:#999;
+        font-size: rem(22);
+      }
+    }
+    &>div.select-box{
+      height: rem(55);
+      display: flex;
+      align-items: center;
+     /* width: rem(172);*/
+      i{
+        font-size: rem(28);
+        color:#ccc;
+      }
+      &>select{
+        width: rem(184);
+        border: 0px;
+        height: 100%;
+        appearance:none;
+        padding: 5px;
+        background:#ffffff;
+        color:#666;
+      }
+    }
+
+    /*去付款*/
+    &.pay{
+      border: 0px;
+      height: rem(98);
+      display: flex;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      padding-right: 0;
+      &>div{
+        display: flex;
+        align-items: center;
+        i{
+          font-size: rem(28);
+          color:#ff7815
+        }
+        span{
+          font-size: rem(28);
+          color:#ff7815
+        }
+      }
+      a{
+        //padding: rem(15) rem(35);
+        width: rem(235);
+        height: rem(98);
+        line-height: rem(98);
+        text-align: center;
+        background-color: #f19f3d;
+        color: #fff;
+        font-size: rem(32);
+
+        &.no {
+          background-color: #999;
+        }
+
+        &.will-sale {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+select{
+  outline: 0px !important;
+}
+  input{
+    outline: 0px !important;
+    padding-left: rem(5);
+    padding-right: rem(5);
+  }
+}
