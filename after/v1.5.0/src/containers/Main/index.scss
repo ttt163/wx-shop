@@ -1,0 +1,71 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/7/27
+ * Description：main
+ */
+
+.shop-menu {
+    border-right: 0;
+    height: 100%;
+    .ant-menu-item {
+        position: relative;
+        a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.shop-slider {
+    background: #fff;
+}
+
+.shop-content-wrap {
+    padding: 0 24px 24px;
+}
+
+.shop-content {
+    margin: 0;
+    padding: 24px;
+    background: #fff;
+    border-radius: 3px;
+    min-height: 280px;
+    overflow-y: auto;
+}
+
+.shop-breadcrumb {
+    margin: 12px 0;
+}
+
+.shop-logo {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s ease-in 0s;
+    cursor: pointer;
+    img {
+        display: inline-block;
+        margin-top: (64-36)/2+px;
+        height: 36px;
+    }
+}
+
+.shop-func {
+    float: right;
+    button {
+        margin-left: 10px;
+    }
+}
+
+.game-id{
+    margin-left: 70px;
+    background-color: transparent !important;
+    .name{
+        color: #ffb75d;
+        font-size: 13px;
+    }
+}
