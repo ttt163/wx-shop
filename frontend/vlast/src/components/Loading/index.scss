@@ -1,0 +1,30 @@
+/**
+ * Author：tantingting
+ * Time：2018/1/3
+ * Description：Description
+ */
+@import "../../../libs/scss/rem";
+.Loading {
+    background-color: #fff;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    opacity: 1;
+    top: 0;
+
+    &.hide {
+        transition: all 1s ease;
+        opacity: 0;
+        display: none;
+    }
+
+    img {
+        width: rem(238);
+        height: rem(179);
+        margin-left: 50%;
+        margin-top: 60%;
+        transform: translate(-50%);
+    }
+}

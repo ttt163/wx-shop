@@ -1,0 +1,67 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/10
+ * Description：enter scss
+ */
+
+.game-wrap {
+    background: #ececec;
+    flex: 1;
+    height: 100%;
+    padding: 24px;
+    &>div{
+        background: #fff;
+        flex: 1;
+        height: 100%;
+        padding: 24px;
+    }
+    .game-item {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        /*padding: 10px;*/
+       /* background: url("./img/game-bg.jpg") no-repeat center;*/
+        border-radius: 5px;
+        display: block;
+        height: 150px;
+        width: 300px;
+        transition: all 0.2s ease-out 0s;
+        color: #fff;
+        font-size: 20px;
+        border: 1px solid;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        .mask{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0,0,0,0.4);
+            z-index: 7;
+        }
+        span{
+            position: absolute;
+            z-index: 9;
+            top:10px;
+            left: 10px;
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+           /* height: 150px;
+            width: 300px;*/
+        }
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 0 5px 20px 0;
+            transform: translateY(-5px);
+        }
+
+        .platform-type {
+            position: absolute;
+            z-index: 9;
+            right: 15px;
+            bottom: 15px;
+        }
+    }
+}

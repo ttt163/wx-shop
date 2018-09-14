@@ -1,0 +1,33 @@
+/**
+ * Author：tantingting
+ * Time：2017/8/17
+ * Description：Description CarouselIndex
+ */
+@import "../../../libs/scss/rem";
+
+.carousel-main {
+    ul{
+        height: 100%;
+        &>li{
+            font-size: rem(20);
+            position: relative;
+            height: rem(172);
+            a{
+                color:#ffffff!important;
+                height: rem(172);
+                display: block;
+                span{
+                    position: absolute;
+                    bottom: rem(30);
+                    left: rem(235);
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+}

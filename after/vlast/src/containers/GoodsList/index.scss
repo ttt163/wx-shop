@@ -1,0 +1,78 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/14
+ * Description：Description
+ */
+
+.goods-list {
+    .check-search {
+        .check-search-left {
+            float: left;
+            .goodsProLabel {
+                float: left;
+                line-height: 30px;
+            }
+            .ant-form-item {
+                float: left;
+                margin-right: 10px;
+            }
+        }
+        .check-search-right {
+            float: right;
+            button {
+                margin-left: 10px;
+            }
+        }
+    }
+    .goods-price {
+        span {
+            display: block;
+            &:first-child {
+                color: red;
+            }
+            &:last-child {
+                color: #bbbbbb;
+                text-decoration: line-through;
+            }
+        }
+    }
+    span.saleing {
+        color: #0e77ca;
+    }
+    .goods-operate {
+        a {
+            margin: 0 2px;
+        }
+    }
+    .goods_file {
+        text-align: center;
+        width: 80px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .timed-task {
+        text-align: center;
+
+        &.indate {
+            color: #009dd9;
+        }
+
+        &.outdate {
+            color: #b4b5b7;
+        }
+
+        &.before {
+            color: red;
+        }
+    }
+
+    .f-left {
+        float: left;
+    }
+
+    .platform-box {
+        float: right;
+    }
+}

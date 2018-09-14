@@ -1,0 +1,123 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/7/31
+ * Description：login
+ */
+
+.login-wrap {
+    // padding-top: 160px;
+    background: #ececec;
+    height: 100%;
+
+    header {
+        background: #404040;
+        padding: 0 50px;
+        line-height: 64px;
+
+        h3 {
+            color: #fff;
+            margin-left: 45px;
+            float: left;
+            font-size: 23px;
+        }
+
+        .logo {
+            float: left;
+            width: 100px;
+            height: 45px;
+            background: url("../../public/img/logo.png") left center no-repeat;
+            background-size: contain;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.1s ease-in 0s;
+            cursor: pointer;
+            margin-top: 10px;
+
+            /* img {
+                display: inline-block;
+                margin-top: 14px;
+                height: 36px;
+            } */
+        }
+    }
+
+    .login-main {
+        position: relative;
+        top: 60px;
+
+        .login-icon {
+            position: absolute;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+            background: url("./img/ic_launcher.png") #fff no-repeat;
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+            z-index: 3;
+            border-radius: 50%;
+            top: -50px;
+            box-shadow: 2px -9px 20px -10px #9e9e9e;
+        }
+
+        .login-contain {
+            position: absolute;
+            padding: 65px 60px 40px;
+            width: 500px;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+            background: #fff;
+            top: 150px;
+            box-shadow: 2px 2px 20px #9e9e9e;
+
+            button {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 28px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    /* .login-content {
+        background: #2d353c;
+        padding: 40px;
+
+        .login-main {
+            margin: 0 auto;
+            width: 400px;
+
+            .ant-input,
+            .ant-btn {
+                height: 40px;
+            }
+
+            .login-form-button {
+                width: 100%;
+            }
+        }
+    } */
+}
+/*
+.login-wrap {
+    padding-top: 160px;
+    background: #d9e0e7;
+    height: 100%;
+    .login-content {
+        background: #2d353c;
+        padding: 40px;
+        .login-main {
+            margin: 0 auto;
+            width: 400px;
+            .ant-input, .ant-btn {
+                height: 40px;
+            }
+            .login-form-button {
+                width: 100%;
+            }
+        }
+    }
+}
+*/

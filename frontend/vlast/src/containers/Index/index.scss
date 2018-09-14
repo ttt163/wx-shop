@@ -1,0 +1,381 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/16
+ * Description：index
+ */
+@import "../../../libs/scss/rem";
+
+.index-main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    header{
+         background-color: #14191d;
+        font-size: rem(20);
+        height: rem(55);
+        padding: 0px rem(25);
+        color:#ffffff;
+        display: flex;
+        justify-content: space-between;
+        &>div{
+            display: flex;
+            align-items: center;
+            &>i{
+
+            }
+            &>span{
+                margin-left: rem(8);
+            }
+            &>div.user-round{
+                width: rem(35);
+                height: rem(35);
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+    .index-carouser{
+        height: rem(172);
+    }
+  .index-content{
+    background: #ffffff;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+  }
+    /*.index-tab{
+        height: rem(85);
+    }*/
+    .index-tab-cont{
+        flex: 1;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        background: #f4f4f4;
+        /*position: relative;*/
+        &>div>div{
+            padding-top: rem(25);
+            background: #ffffff;
+            margin-bottom: rem(15);
+        }
+        .title{
+            color:#a7b0b5;
+            font-size: rem(20.47);
+            margin-bottom: rem(15);
+            margin-left: rem(25);
+            i {
+                margin-right: rem(8);
+                font-size: rem(26);
+            }
+        }
+        .item{
+             display: flex;
+             justify-content: space-between;
+             align-items: flex-end;
+             padding: 0 rem(25) rem(25);
+             margin-bottom: rem(25);
+             border-bottom: 1px solid #e5e5e5;
+             position: relative;
+             z-index: 1;
+
+            &:nth-last-of-type(1) {
+                border-bottom: 0;
+                margin-bottom: 0;
+            }
+             &>div.item-goods{
+                 display: flex;
+                 .goods-block{
+                     width: rem(155);
+                     height: rem(155);
+                     border-radius: rem(15);
+                     /* background: url("./img/list-1.png") no-repeat;
+                      background-size: contain;*/
+                     margin-right: rem(15);
+                     overflow: hidden;
+                     position: relative;
+                     img{
+                         width: 100%;
+                     }
+                     .role{
+                         position: absolute;
+                         top: 0px;
+                         left: 0px;
+                         width: rem(75);
+                         height: rem(75);
+                         &.ios{
+                             background: url("./img/ios.png") no-repeat;
+                             background-size: contain;
+                         }
+                         &.android{
+                             background: url("./img/anzhuo.png") no-repeat;
+                             background-size: contain;
+                         }
+                     }
+                 }
+                 .goods-info{
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-between;
+                     padding: rem(14) 0;
+                     // max-width: rem(255);
+                     // overflow: hidden;
+                     &>h4{
+                         font-size: rem(26);
+                         color:#252e38;
+                         max-width: rem(280);
+                         overflow: hidden;
+                         text-overflow: ellipsis;
+                         white-space: nowrap;
+                     }
+                     &>div{
+                         font-size: rem(32.42);
+                         .icon-yuan{
+                             font-size: rem(22.18);
+                            /* margin-right: rem(5);*/
+                         }
+                         .oprice{
+                             text-decoration: line-through;
+                             margin-left: rem(5);
+                             color: #a7b0b5;
+                             font-size: rem(20.47);
+                         }
+                         color:#ff7815;
+                         &>div{
+                             width: rem(260);
+                             overflow: hidden;
+                             // text-overflow: ellipsis;
+
+                             &.p-bg {
+                                 width: rem(172);
+                                 height: rem(30);
+                                 position: relative;
+                                 background-color: #ccc;
+                                 color: #fff;
+                                 border-radius: rem(35);
+                                 margin-top: rem(6);
+
+                                 .p-bar {
+                                     width: rem(0);
+                                     height: rem(30);
+                                     position: absolute;
+                                     background-color: #ff3a4c;
+                                     top: 0;
+                                     border-radius: rem(35) 0 0 rem(35);
+                                 }
+
+                                 span {
+                                     font-size: rem(18.77);
+                                     position: absolute;
+                                     z-index: 3;
+                                     top: rem(5);
+                                     left: rem(16);
+                                 }
+                             }
+                         }
+                         &>span{
+                             margin-top: rem(10);
+                             color:#9fa0a6;
+                             font-size: rem(22);
+                             display: block;
+                             //width: rem(260);
+                             overflow: hidden;
+                             text-overflow: ellipsis;
+                             white-space: nowrap;
+                         }
+                         &> p{
+                             display: flex;
+                             align-items: center;
+                             margin-top: rem(10);
+                             &>div {
+                                 border: 1px solid #3bb3ec;
+                                 height: rem(28);
+                                 line-height: rem(28);
+                                 //min-width: rem(86);
+                                 color: #3bb3ec;
+                                 font-size: rem(17.6);
+                                 box-sizing: content-box;
+                                 display: flex;
+                                 align-items: center;
+                                 border-radius: rem(3);
+                                 margin-right: rem(10);
+                                 padding-right: rem(10);
+
+                                 i {
+                                     color: #fff;
+                                     font-size: rem(24);
+                                     width: rem(29);
+                                     height: rem(28);
+                                     padding: rem(2);
+                                     background-color: #3bb3ec;
+                                     display: block;
+                                     box-sizing: border-box;
+                                     margin-right: rem(10);
+                                 }
+                             }
+                             span {
+                                 font-size: rem(20.47);
+                                 color: #9fa0a6;
+                             }
+                         }
+                     }
+                 }
+             }
+             .btn-yellow{
+                 position: absolute;
+                 right: rem(25);
+                 z-index: 3;
+                 bottom: rem(39);
+             }
+
+            .time-block {
+                position: absolute;
+                top:rem(14);
+                right: rem(26);
+                z-index: 3;
+                color: #ff3a4c;
+                font-size: rem(24);
+                text-align: center;
+
+                .box {
+                    margin-top: rem(5);
+                    div{
+                        float: left;
+                        color: #fff;
+                        font-size: rem(18);
+                        min-width: rem(25);
+                        min-height: rem(25);
+                        line-height: rem(25);
+                        padding: rem(2);
+                        background-color: #ff3a4c;
+                        border-radius: rem(5);
+                    }
+                    span {
+                        float: left;
+                        margin: 0 rem(2);
+                    }
+                }
+
+                &.start {
+                    color: #ff9a14;
+
+                    .box {
+                        div {
+                            background-color: #ff9a14;
+                        }
+                    }
+                }
+            }
+
+            .test-goods {
+                left: rem(290);
+                top: rem(40);
+                position: absolute;
+                height: rem(69);
+                width: rem(70);
+            }
+         }
+        /*没有数据*/
+        /*.no-data{
+            background-color: #ffffff;
+            font-size: rem(25.59);
+            color:#252e38;
+            height: rem(530);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                width: rem(75);
+                height: rem(75);
+                margin-bottom: rem(25);
+                img{
+                    width:100%;
+                }
+            }
+        }*/
+    }
+    /*用户中心*/
+    .index-user{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background: rgba(209, 210, 210, 0.5);
+        overflow: auto;
+        /*position: absolute;
+        height: 100%;
+        width: 100%;
+        .mask{
+            position:fixed;
+            background: rgba(209, 210, 210,0.6);
+            width: 100%;
+            top: 0px;
+            left:0px;
+            height: 100%;
+            z-index: 1000;
+        }*/
+
+        /*opacity: 0.6;*/
+        &>div.user-main{
+            width: rem(425);
+            background: rgba(0, 0, 0,0.8);;
+            /*opacity: 0.3;*/
+            color:#ffffff;
+            position: fixed;
+            z-index: 1001;
+            top:0px;
+            right: 0px;
+            height: 100%;
+            &>div{
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #414448;
+                box-sizing: border-box;
+                &.user-info{
+                    justify-content:flex-end;
+                    align-items: center;
+                    height: rem(328);
+                    padding-bottom: rem(50);
+                    h4{
+                        font-size:rem(27.3);
+                    }
+                    .img-block{
+                        width: rem(140);
+                        height: rem(140);
+                        border-radius: 50%;
+                        background: #ffffff url("./img/ic_launcher.png");
+                        background-size: contain;
+                        margin-bottom: rem(20);
+                    }
+                }
+                &:nth-of-type(2){
+                    height: rem(228);
+                    padding-left: rem(65);
+                    justify-content: space-around;
+                    i{
+                        margin-right: rem(25);
+                        font-size: rem(30);
+
+                        &.icon-duihuan {
+                            font-size: rem(34);
+                            margin-left: rem(-4);
+                        }
+                    }
+                    a{
+                        color:#d7dee4;
+                        font-size: rem(23.89);
+                        display: block;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
